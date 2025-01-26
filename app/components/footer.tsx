@@ -29,9 +29,6 @@ function SocialLinks() {
       <SocialLink href={socialLinks.instagram} icon={FaInstagram} />
       <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} />
       <SocialLink href={socialLinks.email} icon={TbMailFilled} />
-      <a href="/rss.xml" target="_self">
-        <FaRss />
-      </a>
     </div>
   );
 }
@@ -42,11 +39,11 @@ export default function Footer() {
       <time>© {YEAR}</time>{" "}
       <a
         className="no-underline"
-        href={socialLinks.twitter}
+        href={socialLinks.email}
         target="_blank"
         rel="noopener noreferrer"
       >
-        {metaData.title}
+        Bilal Ahmad
       </a>
       <style jsx>{`
         @media screen and (max-width: 480px) {

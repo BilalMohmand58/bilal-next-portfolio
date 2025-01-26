@@ -4,13 +4,13 @@ import { projects } from "./project-data";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "Nextfolio Projects",
+  description: "Bilal Ahmad's Projects",
 };
 
 export default function Projects() {
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-medium tracking-tight">Projects</h1>
+      <h1 className="mb-8 text-xl font-medium tracking-tight">My Projects</h1>
       <div>
         {projects.map((project, index) => (
           <Link

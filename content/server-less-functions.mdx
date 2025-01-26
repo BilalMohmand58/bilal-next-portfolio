@@ -1,0 +1,48 @@
+---
+title: "Next.js Serverless Functions"
+publishedAt: "2025-01-26"
+summary: "A guide to understanding and utilizing serverless functions in Next.js."
+tags: "Next.js, Serverless Functions, Web Development"
+---
+
+Next.js provides a powerful way to build serverless APIs using its built-in API Routes. With serverless functions, you can quickly deploy scalable APIs without managing server infrastructure.
+
+Here are some key concepts and examples to get started:
+
+## What are Serverless Functions?
+
+Serverless functions are single-purpose, event-driven pieces of backend logic that execute on-demand. In the context of Next.js, serverless functions are created using API Routes in the `pages/api/` directory or the `app/api/` directory (when using the App Router).
+
+#### Key Benefits of Serverless Functions:
+
+- **Scalability**: Automatically scales with traffic.
+- **Cost-effectiveness**: Pay only for the time your code runs.
+- **Ease of Use**: No need to manage servers or infrastructure.
+
+## Emphasis
+
+**Next.js makes API development seamless with serverless functions.**
+
+_You can include backend logic directly in your frontend project._
+
+<del> No need for a separate backend framework. </del>
+
+## Blockquotes
+
+> Serverless functions enable developers to focus on building applications without worrying about server management – Vercel.
+
+## Links
+
+- Learn more about [Next.js Serverless Functions](https://nextjs.org/docs/api-routes/introduction).
+- Explore [Vercel Serverless Function Limitations](https://vercel.com/docs/concepts/functions/serverless-functions).
+
+## CodeBlocks
+
+### Example of a Basic API Route
+
+```javascript
+// pages/api/hello.js
+export default function handler(req, res) {
+  res.status(200).json({ message: "Hello, world!" });
+}
+```

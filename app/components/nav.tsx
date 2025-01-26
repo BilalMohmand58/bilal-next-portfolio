@@ -3,9 +3,10 @@ import { ThemeSwitch } from "./theme-switch";
 import { metaData } from "../config";
 
 const navItems = {
-  "/blog": { name: "Blog" },
   "/projects": { name: "Projects" },
-  "/photos": { name: "Photos" },
+  "/works": { name: "Work Experiences" },
+  "/blog": { name: "Blogs" },
+  // "/photos": { name: "Photos" },
 };
 
 export function Navbar() {
@@ -13,7 +14,7 @@ export function Navbar() {
     <nav className="lg:mb-16 mb-12 py-5">
       <div className="flex flex-col md:flex-row md:items-center justify-between">
         <div className="flex items-center">
-          <Link href="/" className="text-3xl font-semibold tracking-tight">
+          <Link href="/" className="text-xl font-semibold tracking-tight">
             {metaData.title}
           </Link>
         </div>

@@ -10,8 +10,10 @@ export default function BlogPosts() {
   let allBlogs = getBlogPosts();
 
   return (
-    <section>
-      <h1 className="mb-8 text-2xl font-medium tracking-tight">Our Blog</h1>
+    <section className="p-6">
+      <h1 className="mb-6 text-2xl font-semibold tracking-tight">
+        My Latest Blogs
+      </h1>
       <div>
         {allBlogs
           .sort((a, b) => {
@@ -24,20 +26,38 @@ export default function BlogPosts() {
             return 1;
           })
           .map((post) => (
-            <Link
+            <div
               key={post.slug}
-              className="flex flex-col space-y-1 mb-5 transition-opacity duration-200 hover:opacity-80"
-              href={`/blog/${post.slug}`}
+              className="flex flex-col space-y-3 mb-6 transition-opacity duration-200 hover:opacity-80"
             >
-              <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-1 sm:space-y-0 sm:space-x-2">
-                <h2 className="text-black dark:text-white">
+              <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-center space-y-1 sm:space-y-0 sm:space-x-3">
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="text-lg font-semibold text-gray-900 dark:text-white hover:underline"
+                >
                   {post.metadata.title}
-                </h2>
-                <p className="text-neutral-600 dark:text-neutral-400 tabular-nums text-sm">
+                </Link>
+                <p className="text-sm text-neutral-600 dark:text-neutral-400">
                   {formatDate(post.metadata.publishedAt, false)}
                 </p>
               </div>
-            </Link>
+
+              {/* Excerpt */}
+              <p className="text-sm text-gray-700 dark:text-gray-300">
+                {post.metadata.summary}
+              </p>
+
+              {/* Read More Button */}
+              <Link
+                href={`/blog/${post.slug}`}
+                className="text-sm text-blue-500 dark:text-blue-400 hover:underline mt-3"
+              >
+                Read More
+              </Link>
+
+              {/* Line Separator */}
+              <div className="border-t border-gray-300 dark:border-gray-700 my-3" />
+            </div>
           ))}
       </div>
     </section>

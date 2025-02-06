@@ -4,8 +4,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "postinstall": "pnpm install --no-frozen-lockfile"
+    "start": "next start"
   },
   "dependencies": {
     "@types/node": "22.10.7",

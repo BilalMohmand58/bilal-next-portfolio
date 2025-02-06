@@ -76,7 +76,7 @@ export default function Page() {
         <p>
           I thrive in collaborative environments and embrace continuous learning
           to stay ahead in the fast-evolving tech landscape. Let’s team up to
-          bring your vision to life!
+          bring your vision to life.
         </p>
       </div>
       <div className="mt-4 ">

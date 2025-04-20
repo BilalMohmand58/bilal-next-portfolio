@@ -12,7 +12,7 @@ export const workExperiences: WorkExperience[] = [
     company: "Bredwares Technologies",
     title: "Full Stack Developer [Next Js]",
     startYear: "Sept, 2024",
-    endYear: "Present",
+    endYear: "March, 2025",
     description:
       "Developing and maintaining scalable web applications, integrating APIs, and working with both frontend and backend technologies.",
     url: "#",

@@ -13,8 +13,18 @@ export const projects: Project[] = [
     description:
       "YTMatic is an AI-driven SaaS platform for effortless video creation, offering niche-based content generation, AI voice-overs, stock visuals, subtitles, branding, and real-time previews for creators and businesses.",
     githubUrl: "",
-    liveUrl: "https://ytmatic.com",
+    liveUrl: "https://ytmate-project.vercel.app/",
   },
+
+  {
+    title: "Bredware Surveillance App",
+    year: 2024,
+    description:
+      "Bredware is a full-stack Next.js application designed for scheduling and managing meetings with a personalized dashboard. It provides users with a seamless experience to organize, monitor, and stay updated on their meetings.",
+    githubUrl: "", // Replace with actual URL if available
+    liveUrl: "https://bredwares-sur.vercel.app/",
+  },
+
   {
     title: "Hello Entertainer",
     year: 2025,

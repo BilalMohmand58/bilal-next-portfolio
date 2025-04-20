@@ -10,7 +10,7 @@ export interface WorkExperience {
 export const workExperiences: WorkExperience[] = [
   {
     company: "Bredwares Technologies",
-    title: "Full Stack Developer [Next Js]",
+    title: "Full Stack Developer",
     startYear: "Sept, 2024",
     endYear: "March, 2025",
     description:

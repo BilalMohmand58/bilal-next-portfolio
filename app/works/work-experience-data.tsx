@@ -9,6 +9,15 @@ export interface WorkExperience {
 
 export const workExperiences: WorkExperience[] = [
   {
+    company: "Sterlings Tech",
+    title: "Full Stack Developer",
+    startYear: "May, 2025",
+    endYear: "Present",
+    description:
+      "Developing and maintaining scalable web applications utalizing MERN/MEAN stack, integrating APIs, and working with both frontend and backend technologies.",
+    url: "#",
+  },
+  {
     company: "Bredwares Technologies",
     title: "Full Stack Developer",
     startYear: "Sept, 2024",
